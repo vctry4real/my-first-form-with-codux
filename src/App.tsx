@@ -1,23 +1,20 @@
-import logo from './assets/logo.svg';
 import styles from './App.module.scss';
+import { Label } from './components/label/label';
+import { Input } from './components/input/input';
+import { SubmitButton } from './components/submit-button/submit-button';
 
 function App() {
     return (
         <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <form>
+                <Label htmlfor="name">Name</Label>
+                <Input id={'name'} name={'name'} />
+                <Label htmlfor="email">Email</Label>
+                <Input id={'email'} name="email"></Input>
+                <Label htmlfor="message">Message</Label>
+                <Input id={'message'} name="message" />
+                <SubmitButton> Submit</SubmitButton>
+            </form>
         </div>
     );
 }
