@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 export interface LabelProps {
     className?: string;
-    children?: JSX.Element|Array<JSX.Element|string>|string;
+    children?: JSX.Element | Array<JSX.Element | string> | string;
     htmlfor?: string;
 }
 
@@ -14,7 +14,10 @@ export interface LabelProps {
 export const Label = ({ className, children, htmlfor }: LabelProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <label htmlFor={htmlfor}> {children} </label>
+            <label htmlFor={htmlfor} className={styles.label}>
+                {' '}
+                {children}{' '}
+            </label>
         </div>
     );
 };

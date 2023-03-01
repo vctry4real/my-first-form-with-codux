@@ -15,7 +15,7 @@ export interface InputProps {
 export const Input = ({ className, children = 'Input', id, name }: InputProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <input id={id} name={name} />
+            <input id={id} name={name} className={styles.input} />
         </div>
     );
 };

@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: block;
+  align-self: center;
+  width: 100vw;
+  height: 100vh;
+  border: 0px solid black;
 }
 
 .App-logo {
@@ -35,4 +40,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+.form {
+  display: block;
+  padding: 1rem;
+  border: 0px solid #cab5b5;
+  margin: 2rem;
+  width: 30%;
+  align-self: center;
+  position: relative;
+  right: 5px;
+  left: 30%;
+  border-radius: 2rem;
+  background-color: rgba(231, 222, 222, 0.05);
+  box-shadow: 0.61px 3px 17px rgba(0, 0, 0, 0.33);
+  opacity: 1;
+}
+.h1 {
+  display: block;
+  align-self: center;
+  position: relative;
+  right: 5%;
+  margin: 2rem;
+  left: -3%;
+  font-style: italic;
+  color: #654747;
+  border: 0px solid black;
+}
+.p {
+  text-align: center;
+  width: 50%;
+  margin-left: 20rem;
 }

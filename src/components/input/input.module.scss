@@ -1,2 +1,13 @@
 .root {
 }
+.input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #c4b4b4;
+  border-radius: 9px;
+  &:focus {
+    border: 1px solid #dd6d6d;
+    outline: unset;
+    box-shadow: 0 0 6px #925c5c, 0 0 6px rgba(0, 0, 0, 0);
+  }
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+}
